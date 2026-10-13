@@ -1972,6 +1972,11 @@ class DeyeCloudEnergyFlowCard extends HTMLElement {
           background: linear-gradient(90deg, color-mix(in srgb, var(--deye-load) 72%, white), var(--deye-load));
         }
 
+        /* Same bottom spacing as the daily section when the diagram or efficiency
+           strip is the last block (daily energy and/or efficiency hidden). */
+        .main-col > .diagram-stage:last-child,
+        .main-col > .performance-section:last-child { margin-bottom: 18px; }
+
         .daily-section {
           margin: 14px 16px 18px;
           padding: 16px;
